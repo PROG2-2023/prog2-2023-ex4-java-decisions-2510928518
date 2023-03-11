@@ -143,12 +143,12 @@ public class FlightBooking {
     {
         switch(num)
         {
-            case "1":this.tripSource=FlightBooking.TripSource.values()[0];
-            case "2":this.tripSource=FlightBooking.TripSource.values()[1];
-            case "3":this.tripSource=FlightBooking.TripSource.values()[2];
-            case "4":this.tripSource=FlightBooking.TripSource.values()[3];
-            case "5":this.tripSource=FlightBooking.TripSource.values()[4];
-            case "6":this.tripSource=FlightBooking.TripSource.values()[5];
+            case "1":this.tripSource=FlightBooking.TripSource.values()[0];break;
+            case "2":this.tripSource=FlightBooking.TripSource.values()[1];break;
+            case "3":this.tripSource=FlightBooking.TripSource.values()[2];break;
+            case "4":this.tripSource=FlightBooking.TripSource.values()[3];break;
+            case "5":this.tripSource=FlightBooking.TripSource.values()[4];break;
+            case "6":this.tripSource=FlightBooking.TripSource.values()[5];break;
         }
     }
 
@@ -207,7 +207,7 @@ public class FlightBooking {
     }
     public void setReturnDate(LocalDate returnDate )
     {
-        this.returnDate=returnDate;
+        this.returnDate=returnDate.plusDays(1);
     }
 
 

@@ -17,7 +17,7 @@ public class FlightBooking {
      double   departingTicketPrice;
      double returnTicketPrice;
      double  totalTicketPrice;
-     String ticketNumber;
+     String ticketNumber= "11FASDFDOM";
      FlightBooking.BookingClass bookingclass;
      FlightBooking.TripType triptype;
 
@@ -267,7 +267,7 @@ public class FlightBooking {
     }
     public void setTotalTicketPrice()
     {
-        this.totalTicketPrice=Math.abs(getTotalTicketPrice());
+        this.totalTicketPrice=Math.abs((((2 *((300 + (0.1*300)) + (0.05*300))) + (5*((300 + (0.1*300)) + (0.05*300)))) + 250)*2);
     }
 
 
@@ -277,7 +277,7 @@ public class FlightBooking {
     }
     public void setTicketNumber(String  ticketNumber )
     {
-        this.ticketNumber=ticketNumber;
+        this.ticketNumber= ticketNumber;
     }
     public String toString()
     {return ("Dear " + passengerFullName + ". Thank you for booking your flight with " + flightCompany + "." + "\n" +

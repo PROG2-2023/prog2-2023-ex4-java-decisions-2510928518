@@ -20,6 +20,7 @@ public class FlightBooking {
      String ticketNumber= "11FASDFDOM";
      FlightBooking.BookingClass bookingclass;
      FlightBooking.TripType triptype;
+     
 
 
     enum DestinationAirport
